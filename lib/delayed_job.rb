@@ -1,6 +1,7 @@
 require File.dirname(__FILE__) + '/delayed/message_sending'
 require File.dirname(__FILE__) + '/delayed/performable_method'
 require File.dirname(__FILE__) + '/delayed/backend/base'
+require File.dirname(__FILE__) + '/delayed/scheduled_job'
 require File.dirname(__FILE__) + '/delayed/worker'
 
 Object.send(:include, Delayed::MessageSending)   
