@@ -12,13 +12,9 @@ It is a direct extraction from Shopify where the job table is responsible for a 
 * batch imports 
 * spam checks 
 
+nitsujri's Notes: This is a patch to allow for cron-like jobs in delayed_job so it becomes your one stop shop for all jobs.  Forked from collectiveidea and patched from terrbear's code.
+
 h2. Installation
-
-To install as a gem, add the following to @config/environment.rb@:
-
-<pre>
-config.gem 'delayed_job'
-</pre>
 
 Rake tasks are not automatically loaded from gems, so you'll need to add the following to your Rakefile:
 
@@ -33,7 +29,7 @@ end
 To install as a plugin:
 
 <pre>
-script/plugin install git://github.com/collectiveidea/delayed_job.git
+script/plugin install git://github.com/nitsujri/delayed_job.git
 </pre>
 
 After delayed_job is installed, you will need to setup the backend.
